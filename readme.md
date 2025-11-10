@@ -181,6 +181,13 @@ Kullanım Notları
 
 .csv dosyaları standart pandas.read_csv() ile açılır.
 
+**Not:** Büyük veri dosyaları `Circular_Economy_Dataset/` klasöründe yer alır fakat bu depo içinde GIT tarafından takip edilmeyecektir. Veri dosyaları çok büyük olabileceği için repoya dahil edilmemiştir. Veri setlerini elde etmek için:
+
+1. `1-datasets.ipynb` notebook'unu çalıştırın (internet bağlantısı gerektirir).
+2. Veya README'de sağlanan "Direct Download" linklerini kullanarak ilgili `.tsv.gz` veya `.csv` dosyalarını indirin.
+
+Lütfen veri dosyalarını repoya eklemeyin.
+
 ## 📊 EUROSTAT Veri Setleri
 
 ### Kategori: cei_pc (Döngüsel Ekonomi - Üretim ve Tüketim)
