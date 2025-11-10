@@ -1,29 +1,31 @@
 # Datasets
 
-Bu depo, Eurostat, OECD ve World Bank veri setlerini içerir. Tüm Eurostat veri setleri için doğrudan indirilebilir linkler verilmiştir. README, tarayıcıdan tek tıkla `.tsv.gz` veya `.csv` dosyalarını indirmenize olanak sağlar.
+This repository contains Eurostat, OECD, and World Bank datasets. Direct downloadable links are provided for all Eurostat datasets. The README allows for a single-click download of `.tsv.gz` or `.csv` files directly from the browser.
 
-📂 Klasör Yapısı
+📂 Folder Structure
 ```
-Circular_Economy_Dataset/
+
+Circular\_Economy\_Dataset/
 ├── Eurostat/
-│   ├── cei_pc/       # Production and consumption
-│   ├── cei_wm/       # Waste management
-│   ├── cei_srm/      # Secondary raw materials
-│   ├── cei_cie/      # Competitiveness and innovation
-│   ├── cei_gsr/      # Global sustainability and resilience
-│   ├── t_isoc/       # Digital economy & ICT indicators
-│   └── env_tax/      # Environmental Tax Revenues
+│   ├── cei\_pc/       \# Production and consumption
+│   ├── cei\_wm/       \# Waste management
+│   ├── cei\_srm/      \# Secondary raw materials
+│   ├── cei\_cie/      \# Competitiveness and innovation
+│   ├── cei\_gsr/      \# Global sustainability and resilience
+│   ├── t\_isoc/       \# Digital economy & ICT indicators
+│   └── env\_tax/      \# Environmental Tax Revenues
 ├── OECD/
-│   └── patents/      # Green patents & EPO data
+│   └── patents/      \# Green patents & EPO data
 └── WorldBank/
-    └── CSV files & ZIPs
+    └── CSV files & ZIPs
+
 ```
 
 ---
 
 ## Circular Economy Dataset - Eurostat
 
-Bu depo, Eurostat’un Circular Economy Indicators (CEI) veri setlerini içerir. Tüm tablolar `.tsv.gz` formatında ve doğrudan indirilebilir linklerle sağlanmıştır.
+This repository includes Eurostat's Circular Economy Indicators (CEI) datasets. All tables are provided in `.tsv.gz` format with direct download links.
 
 ---
 
@@ -145,7 +147,7 @@ Bu depo, Eurostat’un Circular Economy Indicators (CEI) veri setlerini içerir.
 
 ## 📊 OECD Data Green/Patent-related Indicators
 
-OECD patent verileri, çeşitli veri tabanlarını içerir. Tüm veriler **https://tinyurl.com/IP202503** üzerinden indirilebilir. İndirme sırasında şifre olarak `BpUXXqryx4gU` girilmelidir.
+OECD patent data includes various databases. All data can be downloaded via **https://tinyurl.com/IP202503**. The password to enter during the download is `BpUXXqryx4gU`.
 
 | Database | Reference / Citation |
 |----------|--------------------|
@@ -156,269 +158,262 @@ OECD patent verileri, çeşitli veri tabanlarını içerir. Tüm veriler **https
 | REGPAT database | “OECD, REGPAT database, May 2025” |
 
 **Notes:**
-- Tüm veri dosyaları doğrudan indirilip klasör içerisinde saklanabilir.
-- REGPAT veya TPF gibi tablolar, çevre ve geri dönüşüm ile ilgili patent analizleri için kullanılabilir.
+* All data files can be downloaded directly and stored in the respective folder.
+* Tables like REGPAT or TPF can be used for patent analysis related to the environment and recycling.
 
 
 ---
 
 ## 📊 World Bank Data
 
-| Table Name             | File Name / Notes                                                |
+| Table Name | File Name / Notes |
 | ---------------------- | ---------------------------------------------------------------- |
-| GDP (current USD)      | `GDP_current_USD.csv`                                            |
-| GDP per capita (PPP)   | `GDP_per_capita_PPP.csv` (from `GDP_per_capita_PPP.zip`)         |
-| Services Value Added   | `Services_Value_Added.csv` (from `Services_Value_Added.zip`)     |
+| GDP (current USD) | `GDP_current_USD.csv` |
+| GDP per capita (PPP) | `GDP_per_capita_PPP.csv` (from `GDP_per_capita_PPP.zip`) |
+| Services Value Added | `Services_Value_Added.csv` (from `Services_Value_Added.zip`) |
 | Employment in Services | `Employment_in_Services.csv` (from `Employment_in_Services.zip`) |
-| Urban Population       | `Urban_Population.csv` (from `Urban_Population.zip`)             |
+| Urban Population | `Urban_Population.csv` (from `Urban_Population.zip`) |
 
 ---
 
 ## Notes
-Kullanım Notları
+Usage Notes
 
-.tsv.gz dosyalarını açmak için Python’da pandas.read_csv(..., compression='gzip', sep='\t') kullanılabilir.
+To open `.tsv.gz` files in Python, you can use `pandas.read_csv(..., compression='gzip', sep='\t')`.
 
-.csv dosyaları standart pandas.read_csv() ile açılır.
-
-**Not:** Büyük veri dosyaları `Circular_Economy_Dataset/` klasöründe yer alır fakat bu depo içinde GIT tarafından takip edilmeyecektir. Veri dosyaları çok büyük olabileceği için repoya dahil edilmemiştir. Veri setlerini elde etmek için:
-
-1. `1-datasets.ipynb` notebook'unu çalıştırın (internet bağlantısı gerektirir).
-2. Veya README'de sağlanan "Direct Download" linklerini kullanarak ilgili `.tsv.gz` veya `.csv` dosyalarını indirin.
-
-Lütfen veri dosyalarını repoya eklemeyin.
-
-## 📊 EUROSTAT Veri Setleri
-
-### Kategori: cei_pc (Döngüsel Ekonomi - Üretim ve Tüketim)
-* **cei_pc020_Material_footprint** (Malzeme ayak izi)
-    * **Sütunlar/Zaman:** `['freq,unit,material,indic_env,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2024 ']`
-    * **Şekil:** `(31, 26)`
-* **cei_pc030_Resource_productivity** (Kaynak verimliliği)
-    * **Sütunlar/Zaman:** `['freq,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2024 ']`
-    * **Şekil:** `(103, 26)`
-* **cei_pc034_Waste_generation_per_capita** (Kişi başına atık üretimi)
-    * **Sütunlar/Zaman:** `['freq,unit,hazard,nace_r2,waste,geo\\TIME_PERIOD', '2004 ', '2006 ', ..., '2022 ']`
-    * **Şekil:** `(39, 11)`
-* **cei_pc032_Waste_per_GDP_unit** (GSYİH birimi başına atık)
-    * **Sütunlar/Zaman:** `['freq,unit,geo\\TIME_PERIOD', '2004 ', '2006 ', ..., '2022 ']`
-    * **Şekil:** `(38, 11)`
-* **cei_pc031_Municipal_waste_per_capita** (Kişi başına belediye atığı)
-    * **Sütunlar/Zaman:** `['freq,wst_oper,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2023 ']`
-    * **Şekil:** `(38, 25)`
-* **cei_pc035_Food_waste** (Gıda atığı)
-    * **Sütunlar/Zaman:** `['freq,wst_oper,waste,nace_r2,unit,geo\\TIME_PERIOD', '2020 ', '2021 ', ..., '2023 ']`
-    * **Şekil:** `(30, 5)`
-* **cei_pc040_Packaging_waste** (Ambalaj atığı)
-    * **Sütunlar/Zaman:** `['freq,waste,wst_oper,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2023 ']`
-    * **Şekil:** `(31, 25)`
-* **cei_pc050_Plastic_packaging_waste** (Plastik ambalaj atığı)
-    * **Sütunlar/Zaman:** `['freq,waste,wst_oper,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2023 ']`
-    * **Şekil:** `(31, 25)`
+`.csv` files can be opened with standard `pandas.read_csv()`.
 
 ---
 
-### Kategori: cei_wm (Döngüsel Ekonomi - Atık Yönetimi)
-* **cei_wm011_Recycling_municipal** (Belediye atığı geri dönüşümü)
-    * **Sütunlar/Zaman:** `['freq,wst_oper,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2023 ']`
-    * **Şekil:** `(38, 25)`
-* **cei_wm010_Recycling_all_waste** (Tüm atıkların geri dönüşümü)
-    * **Sütunlar/Zaman:** `['freq,wst_oper,unit,geo\\TIME_PERIOD', '2010 ', '2012 ', ..., '2022 ']`
-    * **Şekil:** `(28, 8)`
-* **cei_wm020_Recycling_packaging** (Ambalaj geri dönüşümü)
-    * **Sütunlar/Zaman:** `['freq,waste,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2023 ']`
-    * **Şekil:** `(186, 25)`
-* **cei_wm060_Recycling_WEEE** (Elektronik atıkların geri dönüşümü)
-    * **Sütunlar/Zaman:** `['freq,unit,geo\\TIME_PERIOD', '2005 ', '2006 ', ..., '2023 ']`
-    * **Şekil:** `(31, 20)`
+## 📊 EUROSTAT Datasets - Detailed Information
+
+### Category: cei_pc (Circular Economy - Production and Consumption)
+* **cei_pc020_Material_footprint**
+    * **Columns/Time:** `['freq,unit,material,indic_env,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2024 ']`
+    * **Shape:** `(31, 26)`
+* **cei_pc030_Resource_productivity**
+    * **Columns/Time:** `['freq,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2024 ']`
+    * **Shape:** `(103, 26)`
+* **cei_pc034_Waste_generation_per_capita**
+    * **Columns/Time:** `['freq,unit,hazard,nace_r2,waste,geo\\TIME_PERIOD', '2004 ', '2006 ', ..., '2022 ']`
+    * **Shape:** `(39, 11)`
+* **cei_pc032_Waste_per_GDP_unit**
+    * **Columns/Time:** `['freq,unit,geo\\TIME_PERIOD', '2004 ', '2006 ', ..., '2022 ']`
+    * **Shape:** `(38, 11)`
+* **cei_pc031_Municipal_waste_per_capita**
+    * **Columns/Time:** `['freq,wst_oper,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2023 ']`
+    * **Shape:** `(38, 25)`
+* **cei_pc035_Food_waste**
+    * **Columns/Time:** `['freq,wst_oper,waste,nace_r2,unit,geo\\TIME_PERIOD', '2020 ', '2021 ', ..., '2023 ']`
+    * **Shape:** `(30, 5)`
+* **cei_pc040_Packaging_waste**
+    * **Columns/Time:** `['freq,waste,wst_oper,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2023 ']`
+    * **Shape:** `(31, 25)`
+* **cei_pc050_Plastic_packaging_waste**
+    * **Columns/Time:** `['freq,waste,wst_oper,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2023 ']`
+    * **Shape:** `(31, 25)`
 
 ---
 
-### Kategori: cei_srm (Döngüsel Ekonomi - İkincil Hammaddeler)
-* **cei_srm030_Circular_material_use** (Döngüsel malzeme kullanım oranı)
-    * **Sütunlar/Zaman:** `['freq,unit,geo\\TIME_PERIOD', '2004 ', '2005 ', ..., '2023 ']`
-    * **Şekil:** `(28, 21)`
-* **cei_srm010_EOL_RIR** (Ömür Sonu Geri Dönüşüm Girdi Oranları)
-    * **Sütunlar/Zaman:** `['freq,rawmat,unit,geo\\TIME_PERIOD', '2013 ', '2016 ', '2019 ', '2022 ']`
-    * **Şekil:** `(30, 5)`
-* **cei_srm020_Trade_recyclable_materials** (Geri dönüştürülebilir malzemelerin ticareti)
-    * **Sütunlar/Zaman:** `['freq,rawmat,stk_flow,unit,geo\\TIME_PERIOD', '2004 ', '2005 ', ..., '2024 ']`
-    * **Şekil:** `(2344, 22)`
-* **cei_srm040_Recyclable_prices** (Geri dönüştürülebilir malzeme fiyatları)
-    * **Sütunlar/Zaman:** `['freq,rawmat,stk_flow,unit,geo\\TIME_PERIOD', '2004 ', '2005 ', ..., '2024-12 ']`
-    * **Şekil:** `(72, 94)`
+### Category: cei_wm (Circular Economy - Waste Management)
+* **cei_wm011_Recycling_municipal** (Recycling rate of municipal waste)
+    * **Columns/Time:** `['freq,wst_oper,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2023 ']`
+    * **Shape:** `(38, 25)`
+* **cei_wm010_Recycling_all_waste** (Recycling rate of all waste)
+    * **Columns/Time:** `['freq,wst_oper,unit,geo\\TIME_PERIOD', '2010 ', '2012 ', ..., '2022 ']`
+    * **Shape:** `(28, 8)`
+* **cei_wm020_Recycling_packaging** (Recycling rate of packaging waste)
+    * **Columns/Time:** `['freq,waste,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2023 ']`
+    * **Shape:** `(186, 25)`
+* **cei_wm060_Recycling_WEEE** (Recycling rate of WEEE)
+    * **Columns/Time:** `['freq,unit,geo\\TIME_PERIOD', '2005 ', '2006 ', ..., '2023 ']`
+    * **Shape:** `(31, 20)`
 
 ---
 
-### Kategori: cei_cie (Döngüsel Ekonomi - Rekabetçilik ve İnovasyon)
-* **cei_cie012_Private_investment** (Döngüsel ekonomi sektörlerinde özel yatırımlar)
-    * **Sütunlar/Zaman:** `['freq,indic_env,unit,geo\\TIME_PERIOD', '2005 ', '2006 ', ..., '2023 ']`
-    * **Şekil:** `(116, 20)`
-* **cei_cie011_Employment** (Döngüsel ekonomi sektörlerinde istihdam)
-    * **Sütunlar/Zaman:** `['freq,indic_env,unit,geo\\TIME_PERIOD', '2005 ', '2006 ', ..., '2023 ']`
-    * **Şekil:** `(58, 20)`
-* **cei_cie020_Patents** (Döngüsel ekonomi ile ilgili patentler)
-    * **Sütunlar/Zaman:** `['freq,cpatc,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2020 ']`
-    * **Şekil:** `(65, 22)`
+### Category: cei_srm (Circular Economy - Secondary Raw Materials)
+* **cei_srm030_Circular_material_use** (Circular material use rate)
+    * **Columns/Time:** `['freq,unit,geo\\TIME_PERIOD', '2004 ', '2005 ', ..., '2023 ']`
+    * **Shape:** `(28, 21)`
+* **cei_srm010_EOL_RIR** (End-of-life Recycling Input Rates)
+    * **Columns/Time:** `['freq,rawmat,unit,geo\\TIME_PERIOD', '2013 ', '2016 ', '2019 ', '2022 ']`
+    * **Shape:** `(30, 5)`
+* **cei_srm020_Trade_recyclable_materials** (Trade in recyclable raw materials)
+    * **Columns/Time:** `['freq,rawmat,stk_flow,unit,geo\\TIME_PERIOD', '2004 ', '2005 ', ..., '2024 ']`
+    * **Shape:** `(2344, 22)`
+* **cei_srm040_Recyclable_prices** (Recyclable secondary raw materials - prices)
+    * **Columns/Time:** `['freq,rawmat,stk_flow,unit,geo\\TIME_PERIOD', '2004 ', '2005 ', ..., '2024-12 ']`
+    * **Shape:** `(72, 94)`
 
 ---
 
-### Kategori: cei_gsr (Döngüsel Ekonomi - Küresel Sürdürülebilirlik ve Dayanıklılık)
-* **cei_gsr010_Consumption_footprint** (Tüketim ayak izi)
-    * **Sütunlar/Zaman:** `['freq,cons_fp,unit,geo\\TIME_PERIOD', '2010 ', '2011 ', ..., '2023 ']`
-    * **Şekil:** `(1428, 15)`
-* **cei_gsr011_GHG_emissions** (Sera gazı emisyonları)
-    * **Sütunlar/Zaman:** `['freq,airpol,nace_r2,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2023 ']`
-    * **Şekil:** `(33, 25)`
-* **cei_gsr030_Material_import_dependency** (Malzeme ithalat bağımlılığı)
-    * **Sütunlar/Zaman:** `['freq,material,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2024 ']`
-    * **Şekil:** `(36, 26)`
-* **cei_gsr020_EU_self_sufficiency** (AB'nin hammadde kendi kendine yeterliliği)
-    * **Sütunlar/Zaman:** `['freq,rawmat,indic_env,unit,geo\\TIME_PERIOD', '2011 ', '2012 ', ..., '2022 ']`
-    * **Şekil:** `(36, 10)`
+### Category: cei_cie (Circular Economy - Competitiveness and Innovation)
+* **cei_cie012_Private_investment** (Private investment in circular economy sectors)
+    * **Columns/Time:** `['freq,indic_env,unit,geo\\TIME_PERIOD', '2005 ', '2006 ', ..., '2023 ']`
+    * **Shape:** `(116, 20)`
+* **cei_cie011_Employment** (Persons employed in circular economy sectors)
+    * **Columns/Time:** `['freq,indic_env,unit,geo\\TIME_PERIOD', '2005 ', '2006 ', ..., '2023 ']`
+    * **Shape:** `(58, 20)`
+* **cei_cie020_Patents** (Patents related to circular economy)
+    * **Columns/Time:** `['freq,cpatc,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2020 ']`
+    * **Shape:** `(65, 22)`
 
 ---
 
-### Kategori: t_isoc (Bilgi Toplumu)
-* **tin00134_Level_internet_access** (Hanehalkı internet erişim seviyesi)
-    * **Sütunlar/Zaman:** `['freq,unit,hhtyp,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
-    * **Şekil:** `(39, 13)`
-* **tin00028_Internet_use_individuals** (Bireylerin internet kullanımı)
-    * **Sütunlar/Zaman:** `['freq,ind_type,unit,indic_is,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
-    * **Şekil:** `(156, 13)`
-* **tin00092_Frequent_internet_use** (Bireylerin sık internet kullanımı)
-    * **Sütunlar/Zaman:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
-    * **Şekil:** `(39, 13)`
-* **tin00091_Regular_internet_use** (Bireylerin düzenli internet kullanımı)
-    * **Sütunlar/Zaman:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
-    * **Şekil:** `(39, 13)`
-* **tin00093_Never_used_internet** (Bireylerin hiç internet kullanmaması)
-    * **Sütunlar/Zaman:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
-    * **Şekil:** `(39, 13)`
-* **tin00094_Email_use** (Bireylerin e-posta kullanımı)
-    * **Sütunlar/Zaman:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
-    * **Şekil:** `(39, 13)`
-* **tin00127_Social_networks** (Bireylerin sosyal ağ kullanımı)
-    * **Sütunlar/Zaman:** `['freq,unit,indic_is,ind_type,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
-    * **Şekil:** `(39, 13)`
-* **tin00095_Info_goods_services** (Mal ve hizmetler hakkında bilgi arama)
-    * **Sütunlar/Zaman:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
-    * **Şekil:** `(39, 13)`
-* **tin00101_Health_info** (Sağlık bilgisi arama)
-    * **Sütunlar/Zaman:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2011 ', '2013 ', ..., '2024 ']`
-    * **Şekil:** `(39, 13)`
-* **tin00099_Internet_banking** (İnternet bankacılığı kullanımı)
-    * **Sütunlar/Zaman:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
-    * **Şekil:** `(39, 13)`
-* **tin00098_Selling_goods_services** (İnternet üzerinden mal/hizmet satışı)
-    * **Sütunlar/Zaman:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
-    * **Şekil:** `(39, 13)`
-* **tin00102_Job_search** (İnternet üzerinden iş arama)
-    * **Sütunlar/Zaman:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2006 ', '2007 ', ..., '2023 ']`
-    * **Şekil:** `(39, 13)`
-* **tin00129_Online_consultations** (Çevrimiçi danışmanlık/oylama)
-    * **Sütunlar/Zaman:** `['freq,unit,indic_is,ind_type,geo\\TIME_PERIOD', '2011 ', '2013 ', ..., '2024 ']`
-    * **Şekil:** `(546, 10)`
-* **tin00103_Online_courses** (Çevrimiçi kurs alma)
-    * **Sütunlar/Zaman:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2010 ', '2011 ', ..., '2024 ']`
-    * **Şekil:** `(39, 13)`
+### Category: cei_gsr (Circular Economy - Global Sustainability and Resilience)
+* **cei_gsr010_Consumption_footprint**
+    * **Columns/Time:** `['freq,cons_fp,unit,geo\\TIME_PERIOD', '2010 ', '2011 ', ..., '2023 ']`
+    * **Shape:** `(1428, 15)`
+* **cei_gsr011_GHG_emissions** (Greenhouse gases emissions from production activities)
+    * **Columns/Time:** `['freq,airpol,nace_r2,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2023 ']`
+    * **Shape:** `(33, 25)`
+* **cei_gsr030_Material_import_dependency**
+    * **Columns/Time:** `['freq,material,unit,geo\\TIME_PERIOD', '2000 ', '2001 ', ..., '2024 ']`
+    * **Shape:** `(36, 26)`
+* **cei_gsr020_EU_self_sufficiency** (EU self-sufficiency for raw materials)
+    * **Columns/Time:** `['freq,rawmat,indic_env,unit,geo\\TIME_PERIOD', '2011 ', '2012 ', ..., '2022 ']`
+    * **Shape:** `(36, 10)`
 
 ---
 
-### Kategori: t_isoc_iec (Bilgi Toplumu - E-ticaret)
-* **tin00096_Buying_goods_services** (İnternet üzerinden mal/hizmet satın alma)
-    * **Sütunlar/Zaman:** `['freq,ind_type,indic_is,unit,geo\\TIME_PERIOD', '2020 ', '2021 ', ..., '2024 ']`
-    * **Şekil:** `(78, 6)`
+### Category: t_isoc (Information Society)
+* **tin00134_Level_internet_access** (Level of internet access - households)
+    * **Columns/Time:** `['freq,unit,hhtyp,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
+    * **Shape:** `(39, 13)`
+* **tin00028_Internet_use_individuals** (Internet use by individuals)
+    * **Columns/Time:** `['freq,ind_type,unit,indic_is,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
+    * **Shape:** `(156, 13)`
+* **tin00092_Frequent_internet_use** (Individuals frequently using the internet)
+    * **Columns/Time:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
+    * **Shape:** `(39, 13)`
+* **tin00091_Regular_internet_use** (Individuals regularly using the internet)
+    * **Columns/Time:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
+    * **Shape:** `(39, 13)`
+* **tin00093_Never_used_internet** (Individuals who have never used the internet)
+    * **Columns/Time:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
+    * **Shape:** `(39, 13)`
+* **tin00094_Email_use** (Individuals using the internet for sending/receiving e-mails)
+    * **Columns/Time:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
+    * **Shape:** `(39, 13)`
+* **tin00127_Social_networks** (Individuals using the internet for social networks)
+    * **Columns/Time:** `['freq,unit,indic_is,ind_type,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
+    * **Shape:** `(39, 13)`
+* **tin00095_Info_goods_services** (Individuals using the internet for finding information about goods/services)
+    * **Columns/Time:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
+    * **Shape:** `(39, 13)`
+* **tin00101_Health_info** (Individuals using the internet for health-related information)
+    * **Columns/Time:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2011 ', '2013 ', ..., '2024 ']`
+    * **Shape:** `(39, 13)`
+* **tin00099_Internet_banking** (Individuals using the internet for internet banking)
+    * **Columns/Time:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
+    * **Shape:** `(39, 13)`
+* **tin00098_Selling_goods_services** (Individuals using the internet for selling goods/services)
+    * **Columns/Time:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
+    * **Shape:** `(39, 13)`
+* **tin00102_Job_search** (Individuals using the internet for job search/application)
+    * **Columns/Time:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2006 ', '2007 ', ..., '2023 ']`
+    * **Shape:** `(39, 13)`
+* **tin00129_Online_consultations** (Individuals using the internet for online consultations/voting)
+    * **Columns/Time:** `['freq,unit,indic_is,ind_type,geo\\TIME_PERIOD', '2011 ', '2013 ', ..., '2024 ']`
+    * **Shape:** `(546, 10)`
+* **tin00103_Online_courses** (Individuals using the internet for online courses)
+    * **Columns/Time:** `['freq,indic_is,unit,ind_type,geo\\TIME_PERIOD', '2010 ', '2011 ', ..., '2024 ']`
+    * **Shape:** `(39, 13)`
 
 ---
 
-### Kategori: t_isoc_e (Bilgi Toplumu - İşletmelerde BİT)
-* **tin00111_Orders_online** (İşletmelerin çevrimiçi sipariş alması)
-    * **Sütunlar/Zaman:** `['freq,size_emp,nace_r2,indic_is,unit,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
-    * **Şekil:** `(36, 13)`
-* **tin00110_Ecommerce_turnover** (İşletmelerin e-ticaret cirosu)
-    * **Sütunlar/Zaman:** `['freq,size_emp,nace_r2,indic_is,unit,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
-    * **Şekil:** `(35, 13)`
-* **tin00116_Business_software** (İşletmelerin yazılım kullanımı)
-    * **Sütunlar/Zaman:** `['freq,size_emp,nace_r2,indic_is,unit,geo\\TIME_PERIOD', '2023 ']`
-    * **Şekil:** `(33, 2)`
+### Category: t_isoc_iec (Information Society - E-commerce)
+* **tin00096_Buying_goods_services** (Individuals using the internet for buying goods or services)
+    * **Columns/Time:** `['freq,ind_type,indic_is,unit,geo\\TIME_PERIOD', '2020 ', '2021 ', ..., '2024 ']`
+    * **Shape:** `(78, 6)`
 
 ---
 
-### Kategori: t_isoc_sk (Bilgi Toplumu - Beceriler)
-* **tepsr_sp410_Digital_skills** (Bireylerin dijital becerileri)
-    * **Sütunlar/Zaman:** `['freq,ind_type,indic_is,unit,geo\\TIME_PERIOD', '2021 ', '2023 ']`
-    * **Şekil:** `(111, 3)`
+### Category: t_isoc_e (Information Society - ICT Usage in Enterprises)
+* **tin00111_Orders_online** (Enterprises having received orders online (≥1%))
+    * **Columns/Time:** `['freq,size_emp,nace_r2,indic_is,unit,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
+    * **Shape:** `(36, 13)`
+* **tin00110_Ecommerce_turnover** (Share of enterprises' turnover on e-commerce)
+    * **Columns/Time:** `['freq,size_emp,nace_r2,indic_is,unit,geo\\TIME_PERIOD', '2013 ', '2014 ', ..., '2024 ']`
+    * **Shape:** `(35, 13)`
+* **tin00116_Business_software** (Share of enterprises using any business software (ERP, CRM, BI))
+    * **Columns/Time:** `['freq,size_emp,nace_r2,indic_is,unit,geo\\TIME_PERIOD', '2023 ']`
+    * **Shape:** `(33, 2)`
 
 ---
 
-### Kategori: t_isoc_se (Bilgi Toplumu - BİT Sektörü)
-* **tin00074_ICT_GVA** (BİT sektörünün GSYİH içindeki payı)
-    * **Sütunlar/Zaman:** `['freq,nace_r2,geo\\TIME_PERIOD', '2011 ', '2012 ', ..., '2022 ']`
-    * **Şekil:** `(114, 13)`
-* **tin00085_ICT_personnel** (BİT sektöründeki personel)
-    * **Sütunlar/Zaman:** `['freq,nace_r2,geo\\TIME_PERIOD', '2011 ', '2012 ', ..., '2022 ']`
-    * **Şekil:** `(114, 13)`
-* **tin00086_ICT_value_added** (BİT sektörünün katma değeri)
-    * **Sütunlar/Zaman:** `['freq,nace_r2,geo\\TIME_PERIOD', '2011 ', '2012 ', ..., '2022 ']`
-    * **Şekil:** `(114, 13)`
+### Category: t_isoc_sk (Information Society - Skills)
+* **tepsr_sp410_Digital_skills** (Individuals with basic or above basic digital skills (by sex))
+    * **Columns/Time:** `['freq,ind_type,indic_is,unit,geo\\TIME_PERIOD', '2021 ', '2023 ']`
+    * **Shape:** `(111, 3)`
 
 ---
 
-### Kategori: t_env_eta (Çevre Vergileri)
-* **ten00141_Environmental_tax_revenues_share_total_taxes** (Çevre vergisi gelirlerinin toplam vergiler içindeki payı)
-    * **Sütunlar/Zaman:** `['freq,tax,unit,geo\\TIME_PERIOD', '2012 ', '2013 ', ..., '2023 ']`
-    * **Şekil:** `(63, 13)`
-* **ten00139_Energy_taxes** (Enerji vergileri)
-    * **Sütunlar/Zaman:** `['freq,tax,unit,nace_r2,geo\\TIME_PERIOD', '2012 ', '2013 ', ..., '2023 ']`
-    * **Şekil:** `(35, 13)`
-* **ten00120_Implicit_tax_rate_energy** (Enerji üzerindeki zımni vergi oranı)
-    * **Sütunlar/Zaman:** `['freq,unit,geo\\TIME_PERIOD', '2012 ', '2013 ', ..., '2023 ']`
-    * **Şekil:** `(30, 13)`
+### Category: t_isoc_se (Information Society - ICT Sector)
+* **tin00074_ICT_GVA** (Percentage of ICT sector in Gross Value Added)
+    * **Columns/Time:** `['freq,nace_r2,geo\\TIME_PERIOD', '2011 ', '2012 ', ..., '2022 ']`
+    * **Shape:** `(114, 13)`
+* **tin00085_ICT_personnel** (Percentage of ICT sector personnel in total employment)
+    * **Columns/Time:** `['freq,nace_r2,geo\\TIME_PERIOD', '2011 ', '2012 ', ..., '2022 ']`
+    * **Shape:** `(114, 13)`
+* **tin00086_ICT_value_added** (Percentage change of value added by ICT sector at current prices)
+    * **Columns/Time:** `['freq,nace_r2,geo\\TIME_PERIOD', '2011 ', '2012 ', ..., '2022 ']`
+    * **Shape:** `(114, 13)`
+
+---
+
+### Category: t_env_eta (Environmental Taxes)
+* **ten00141_Environmental_tax_revenues_share_total_taxes** (Environmental tax revenues as share of total taxes)
+    * **Columns/Time:** `['freq,tax,unit,geo\\TIME_PERIOD', '2012 ', '2013 ', ..., '2023 ']`
+    * **Shape:** `(63, 13)`
+* **ten00139_Energy_taxes** (Energy taxes)
+    * **Columns/Time:** `['freq,tax,unit,nace_r2,geo\\TIME_PERIOD', '2012 ', '2013 ', ..., '2023 ']`
+    * **Shape:** `(35, 13)`
+* **ten00120_Implicit_tax_rate_energy** (Implicit tax rate on energy)
+    * **Columns/Time:** `['freq,unit,geo\\TIME_PERIOD', '2012 ', '2013 ', ..., '2023 ']`
+    * **Shape:** `(30, 13)`
 
 ---
 ---
 
-## 🏦 WORLD BANK (Dünya Bankası) Veri Setleri
+## 🏦 WORLD BANK Datasets - Detailed Information
 
-* **GDP_current_USD** (GSYİH, cari ABD doları)
-    * **Sütunlar:** `["Country Code", "Country Name", "gdp_usd"]`
-    * **Şekil:** `(325, 3)`
-* **GDP_per_capita_PPP** (Kişi başına GSYİH, Satın Alma Gücü Paritesi)
-    * **Sütunlar:** `['Country Name', 'Country Code', 'Indicator Name', ..., '2024']`
-    * **Şekil:** `(266, 39)`
-* **Services_Value_Added** (Hizmet sektörü katma değeri)
-    * **Sütunlar:** `['Series Name', 'Series Code', 'Country Name', ..., '2024 [YR2024]']`
-    * **Şekil:** `(63, 19)`
-* **Urban_Population** (Kentsel nüfus)
-    * **Sütunlar:** `['Series Name', 'Series Code', 'Country Name', ..., '2024 [YR2024]']`
-    * **Şekil:** `(63, 19)`
-* **Employment_in_Services** (Hizmet sektöründe istihdam)
-    * **Sütunlar:** `['Series Name', 'Series Code', 'Country Name', ..., '2024 [YR2024]']`
-    * **Şekil:** `(63, 19)`
-
----
----
-
-## 📈 OECD Veri Setleri
-
-### Kategori: Patent_Citations (Patent Atıfları)
-* **202501_EPO_CIT_COUNTS** (EPO Atıf Sayıları)
-    * **Sütunlar:** `['ep_pub_nbr', 'ep_pub_date', 'ep_appln_id', ..., 'geo']`
-    * **Şekil:** `(4396508, 37)`
+* **GDP_current_USD** (GDP, current US$)
+    * **Columns:** `["Country Code", "Country Name", "gdp_usd"]`
+    * **Shape:** `(325, 3)`
+* **GDP_per_capita_PPP** (GDP per capita, Purchasing Power Parity)
+    * **Columns:** `['Country Name', 'Country Code', 'Indicator Name', ..., '2024']`
+    * **Shape:** `(266, 39)`
+* **Services_Value_Added**
+    * **Columns:** `['Series Name', 'Series Code', 'Country Name', ..., '2024 [YR2024]']`
+    * **Shape:** `(63, 19)`
+* **Urban_Population**
+    * **Columns:** `['Series Name', 'Series Code', 'Country Name', ..., '2024 [YR2024]']`
+    * **Shape:** `(63, 19)`
+* **Employment_in_Services**
+    * **Columns:** `['Series Name', 'Series Code', 'Country Name', ..., '2024 [YR2024]']`
+    * **Shape:** `(63, 19)`
 
 ---
+---
 
-### Kategori: Patent_Citations_Detail (Patent Atıf Detayları)
-* **202501_EPO_CITATIONS** (EPO Atıfları)
-    * **Sütunlar:** `['Citing_pub_nbr', 'Citing_pub_date', 'Citing_app_nbr', ..., 'PCT_Route']`
-    * **Şekil:** `(17065618, 15)`
+## 📈 OECD Datasets - Detailed Information
+
+### Category: Patent_Citations
+* **202501_EPO_CIT_COUNTS** (EPO Citation Counts)
+    * **Columns:** `['ep_pub_nbr', 'ep_pub_date', 'ep_appln_id', ..., 'geo']`
+    * **Shape:** `(4396508, 37)`
 
 ---
 
-### Kategori: Patent_Equivalents (Patent Eşdeğerleri)
-* **202501_EPO_Equivalent** (EPO Eşdeğerleri)
-    * **Sütunlar:** `['Cited_appln_id', 'EP_eqv_appln_id', 'Eqv_app_nbr', 'Eqv_Pub_nbr', 'Eqv_total']`
-    * **Şekil:** `(4269849, 5)`
+### Category: Patent_Citations_Detail
+* **202501_EPO_CITATIONS** (EPO Citations)
+    * **Columns:** `['Citing_pub_nbr', 'Citing_pub_date', 'Citing_app_nbr', ..., 'PCT_Route']`
+    * **Shape:** `(17065618, 15)`
 
-Bu listeden belirli bir veri setini analiz etmemi veya bulmamı ister misiniz?
+---
+
+### Category: Patent_Equivalents
+* **202501_EPO_Equivalent** (EPO Equivalents)
+    * **Columns:** `['Cited_appln_id', 'EP_eqv_appln_id', 'Eqv_app_nbr', 'Eqv_Pub_nbr', 'Eqv_total']`
+    * **Shape:** `(4269849, 5)`
